@@ -11,10 +11,18 @@ function App() {
     <div>
       <NavBar />
       <Switch>
-        <Route path="/home" component={Home} />
-        <Route path="/actors" component={Actors} />
-        <Route path="/directors" component={Directors} />
-        <Route path="/movies" component={Movies} />
+        <Route exact to path="/">
+          <Home />
+        </Route>
+        <Route path="/actors">
+          <Actors />
+        </Route>
+        <Route path="/directors">
+          <Directors />
+        </Route>
+        <Route path="/movies">
+          <Movies />
+        </Route>
       </Switch>
     </div>
   );
