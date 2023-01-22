@@ -8,7 +8,8 @@ function Actors() {
       <h1>Actors Page</h1>
       {actors.map((actor, index) => (
         <div className="actor" key={index}>
-          <p>{actor.name}</p>
+          {actor.name}
+          <ul>{actor.movies}</ul>
         </div>
       ))}
     </div>
